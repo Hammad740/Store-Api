@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 
 const productSchema = new mongoose.Schema({
+  rating: {
+    type: Number,
+  },
   name: {
     type: String,
     required: [true, 'Product name must be provided'],
